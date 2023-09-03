@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NoteCard extends StatelessWidget {
-  const NoteCard({super.key});
+class CoustomNoteCard extends StatelessWidget {
+  const CoustomNoteCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +10,6 @@ class NoteCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color(0xffFFCC80),
           borderRadius: BorderRadius.circular(15),
-          boxShadow: const [
-            BoxShadow(
-              color: Colors.black12,
-              offset: Offset(0, 2),
-              blurRadius: 10,
-            ),
-          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
