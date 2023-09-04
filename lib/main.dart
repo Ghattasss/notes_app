@@ -17,7 +17,7 @@ class NotesApp extends StatelessWidget {
         fontFamily: GoogleFonts.poppins().fontFamily,
         brightness: Brightness.dark,
       ),
-      home: NotesView(),
+      home: const NotesView(),
     );
   }
 }
