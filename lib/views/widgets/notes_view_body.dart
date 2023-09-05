@@ -29,7 +29,7 @@ class _NotesViewBodyState extends State<NotesViewBody> {
           ),
           CoustomAppBar(
             title: 'Notes',
-            icon: Icons.search,
+            icon: Icons.task,
           ),
           Expanded(child: NotesListView()),
         ],

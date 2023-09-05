@@ -18,7 +18,10 @@ class CoustomAppBar extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        CoustomIcon(icon: icon),
+        CoustomIcon(
+          icon: icon,
+          onPressed: onPressed,
+        ),
       ],
     );
   }
