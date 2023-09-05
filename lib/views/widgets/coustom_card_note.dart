@@ -44,10 +44,12 @@ class CoustomNoteCard extends StatelessWidget {
                   ),
                 ),
                 trailing: IconButton(
+                  onPressed: () {
+                    noteModel.delete();
+                  },
                   color: Colors.black,
                   iconSize: 26,
                   icon: const Icon(Icons.delete),
-                  onPressed: () {},
                 ),
               ),
               Padding(
