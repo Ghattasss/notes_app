@@ -50,6 +50,10 @@ class CoustomNoteCard extends StatelessWidget {
                 trailing: IconButton(
                   onPressed: () {
                     noteModel.delete();
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text('Note Deleted'),
+                      duration: Duration(seconds: 2),
+                    ));
                     BlocProvider.of<NotesCubit>(context).getNotes();
                   },
                   color: Colors.black,
